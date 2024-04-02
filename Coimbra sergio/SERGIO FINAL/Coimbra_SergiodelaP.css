@@ -1,0 +1,117 @@
+
+html body{
+    font-family: "Montserrat";
+    margin: 0;
+    background-color: #ADE1E5;
+}
+
+
+    
+.cabecera{
+   padding:3%;
+    background-color: #168ADD;  
+}
+.cabecera h1{
+    font-size: 4rem;
+    text-align: center;
+    margin:0;
+    color:white;
+    text-shadow:8px -8px 8px black;
+}
+
+
+.introduccion{
+    padding-left: 2.5%;
+    margin-top: 4%;
+    margin-right: 40%;
+    margin-left: 1%;
+    margin-bottom: 6%;
+    background-color: #99D19C;
+    color: black;
+    border-style: ridge;
+    border-radius: 20px;
+    border-color: #598867;
+    font-size: 110%;
+    text-align: justify;    
+}
+
+.introduccion p{
+    margin-right: 4%;
+    margin-left: 1%; 
+}
+
+.introduccion h2{
+    padding-right: 20%;
+    margin-left: 23%;
+    margin-right: 33%;
+    color: #175320;
+    background-color: #86BE90;
+    border-style: ridge;
+    border-color: #175320;
+    font-size: 200%;
+    text-align: center;
+}
+
+.sitios{
+    display:flex;
+    flex-flow: column;
+    margin-top: 10%;
+    margin-right: 40%;
+    margin-left: 2%;
+    margin-bottom: 6%;
+    background-color: #99D19C;
+    color: black;
+    border-style: ridge;
+    border-radius: 20px;
+    border-color: #598867;
+    font-size: 110%;
+    text-align: center;    
+}
+
+.sitios h2{
+    margin-left: 16% ;
+    margin-right: 24%;
+    color: #175320;
+    background-color: #86BE90;
+    border-style: ridge;
+    border-color: #175320;
+    font-size: 200%;
+}
+
+.sitios p{
+    text-align: center;
+    font-size: 110%;
+}
+
+.rio{
+    float: right;
+    margin-right: 3%;
+   /* margin-left: 40%;*/
+    width: 28%;
+    border-style: groove;
+    border-width: 8px;
+    border-color:#99D19C;
+    border-radius: 5%;
+    transition: box-shadow 0.2s ease-in-out;
+    cursor: progress;
+}
+
+.mapa{
+    float: right;
+    margin-right: 8%;
+    width: 15%;
+    border-style: groove;
+    border-width: 8px;
+    border-color:#99D19C;
+    border-radius: 5%;
+    transition: box-shadow 0.2s ease-in-out;
+    cursor: progress;
+}
+footer {
+height:4rem;
+   background-color: #168ADD;
+
+}
+footer p{
+    float:right;
+}

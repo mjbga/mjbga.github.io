@@ -1,0 +1,215 @@
+body, html {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    scrollbar-width: thin;
+}
+
+.seccion {
+    height: 100vh;
+    font-size: 2em;
+}
+
+/* header div #barra_sup{   Antiguo código  para la barra superior
+    display: flex;
+    justify-content: center;
+}
+
+header div #barra_sup ul{
+    display: grid;
+    list-style: none;
+    padding: 0;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-gap: 50px;
+}
+
+header div #barra_sup ul li:hover{
+    color: rgb(211, 211, 211);
+}
+
+header div nav#barra_sup ul li a{
+    font-size: 15px;
+    padding: 4px;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+} */
+
+header div #barra_sup {
+    display: flex;
+    justify-content: center;
+}
+
+header div #barra_sup ul {
+    display: grid;
+    list-style: none;
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+header div #barra_sup ul li {
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header div #barra_sup ul li a:hover {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+header div #barra_sup ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+header div #barra_sup ul li a#lugar{
+    padding-bottom: 10px;
+}
+
+header div #barra_sup ul li .content-menu {
+    display: none;
+    position: absolute;
+    background-color: #fcfcfc33;
+    margin-top: 10px;
+    border-radius: 10px;
+    grid-gap: 0px;
+    flex-wrap: wrap;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+}
+
+header div #barra_sup ul li a#lugar:hover + .content-menu, /*Este selector es para que cuando estes por encima del "a" de id:"lugar" con el "+" se le aplique el "display:block" a "class:"content-menu" que es el menu desplegable*/
+header div #barra_sup ul li ul.content-menu:hover { /*Este selector es para que cuando estes por encima del menu se mantenga visible*/
+    display: block;
+}
+
+header div #barra_sup ul li .content-menu a {
+    color: rgb(255, 255, 255);
+    padding: 1vh 1vh;   
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    text-align: center;
+}
+
+header div #barra_sup ul li .content-menu a:hover {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+div#inicio {
+    /* background-image: url(img/Puerta\ fondo.jpg); */
+    /* background-image: url(img/Puente\ fondo.jpg); */
+    /* background-image: url(img/luces.jpg); */
+    /* background-image: url(img/Puente\ noche.jpg); */
+    /* background-image: url(img/Cielo\ rosa.jpg); */
+    /* background-image: url(img/Amanecer.jpg); */
+    /* background-image: url(img/puente\ noche\ 2.jpg); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+} 
+
+div.seccion h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+    font-weight: 900;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.377);
+}
+
+div#seccion1 {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px 100px;
+    padding: 100px;
+
+}
+
+div#seccion1 .articulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-radius: 1cm;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    height: 30vh;
+    
+}
+
+div#seccion1 .articulos:hover {
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.3);
+}
+
+div#seccion1 .articulos#idioma {    /*Seccion idioma*/
+    background-image: url(img/secciones/Idioma.jpg);
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+div#seccion1 .articulos#mapa {  /*Seccion mapa*/
+    background-image: url(img/secciones/Mapa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#seccion1 .articulos#divisa_hora {   /*Seccion Divisa_Hora*/
+    background-image: url(img/secciones/Divisa.jpeg);
+    background-size: cover;
+}
+
+div#seccion1 .articulos#tiempo {    /*Seccion Tiempo*/
+    background-image: url(img/secciones/Tiempo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/* div#seccion1 .articulos img{
+    
+} */
+
+div#seccion1 .articulos h3 a{
+    text-decoration: none;
+    text-decoration: dotted;
+}
+
+div#seccion1 .articulos h3{
+    font-size: 4vh;
+    
+    color: white;
+}
+
+footer {
+    background-color: #ADE1E5;
+    padding: 4.5rem;
+    color: black;
+    margin: 0 auto;
+}
+
+footer section {
+    float: right;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: rgb(33, 33, 33);
+    text-decoration: none;
+}
